@@ -3,11 +3,11 @@ import chargen
 
 app=Flask(__name__)
 
-@app.route('/')
+@app.route('/chargen')
 def index():
     return render_template('index.html')
 
-@app.route('/', methods=['POST'])
+@app.route('/chargen', methods=['POST'])
 def input_from_user():
     race = request.form['race']
     number = int(request.form['number'])
