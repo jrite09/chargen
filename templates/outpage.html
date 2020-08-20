@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Level 0 Character Generator{% endblock %}
+
+{% block content %}
+    <ul>
+    {% for character in characters %}
+        <li>{{ character }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}

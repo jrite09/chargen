@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Level 0 Character Generator{% endblock %}
+{% block content %}
+    <div>
+        <h1>f0rje Tools: Level 0 Character Generator</h1>
+        <form method='POST'>
+            <h3>Number of Characters to Generate</h3>
+            <input name='number' type='radio' id='1' value='1' checked="checked">
+            <label for='1'>1</label>
+            <input name='number' type='radio' id='2' value='2'>
+            <label for='2'>2</label>
+            <input name='number' type='radio' id='4' value='4'>
+            <label for='4'>4</label>
+            <input name='number' type='radio' id='10' value='10'>
+            <label for='10'>10</label>
+
+            <br>
+            
+            <h3>Race of the Characters</h3>
+            <input name='race' type='radio' id='human' value='human' checked="checked">
+            <label for='human'>Human</label>
+            <input name='race' type='radio' id='elf' value='elf'>
+            <label for='elf'>Elf</label>
+            <input name='race' type='radio' id='dwarf' value='dwarf'>
+            <label for='dwarf'>Dwarf</label>
+            <input name='race' type='radio' id='halfling' value='halfling'>
+            <label for='halfling'>Halfling</label>
+            <input name='race' type='radio' id='gnome' value='gnome'>
+            <label for='gnome'>Gnome</label>
+            <input name='race' type='radio' id='half elf' value='half elf'>
+            <label for='half elf'>Half Elf</label>
+            <input name='race' type='radio' id='dragonborn' value='dragonborn'>
+            <label for='dragonborn'>Dragonborn</label>
+            <input name='race' type='radio' id='half orc' value='half orc'>
+            <label for='half orc'>Half Orc</label>
+            <input name='race' type='radio' id='tiefling' value='tiefling'>
+            <label for='tiefling'>Tiefling</label>
+            <input type="submit">
+        </form>
+    </div>
+    <div>
+        <ul>
+        {% for character in characters %}
+            <li>{{ character }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

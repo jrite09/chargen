@@ -1,0 +1,15 @@
+h1 {
+    border: 2px #000000 solid;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Uncial Antiqua';
+    font-size: 48px;
+}
+
+li {
+    font-size: 24px;
+    padding: 8px;
+    text-align: left;
+    font-family: 'Roboto Condensed', sans-serif;
+}
