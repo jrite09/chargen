@@ -1,3 +1,7 @@
+body {
+    background-color: #fff7df;
+}
+
 h1 {
     border: 2px #000000 solid;
     color: black;
@@ -5,11 +9,32 @@ h1 {
     padding: 10px;
     font-family: 'Uncial Antiqua';
     font-size: 48px;
+    margin-left: 4%;
+    margin-right: 4%
+}
+
+ul {
+    text-align: justify;
+    margin-left: 8%;
+    margin-right: 8%
 }
 
 li {
     font-size: 24px;
     padding: 8px;
     text-align: left;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h3 {
+    border: 2px, black solid;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Uncial Antiqua';
+}
+
+form {
+    text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
 }
